@@ -26,13 +26,13 @@ public class MainController {
 
     @GetMapping("/greetUsingRestTemplate")
     public String greetUsingRestTemplate() {
-        return restTemplate.getForObject("http://localhost:8101/message", String.class);
+        return restTemplate.getForObject("http://DATA-SERVICE/message", String.class);
     }
 
     @GetMapping("/greetUsingRestClient")
     public String greetUsingRestClient() {
         return restClient.get()
-                .uri("http://localhost:8101/message")
+                .uri("http://DATA-SERVICE/message")
                 .retrieve()
                 .body(String.class);
     }
