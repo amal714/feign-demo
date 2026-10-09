@@ -9,6 +9,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class DataApplication {
 
     public static void main(String[] args) {
+        System.out.println("reached inside main method of data-service. about to start the spring application context");
         SpringApplication.run(DataApplication.class, args);
     }
 }

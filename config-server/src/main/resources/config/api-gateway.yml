@@ -21,3 +21,5 @@ spring:
             - Path=/api/main/**
           filters:
             - StripPrefix=2 # This removes the /api/main prefix before forwarding the request to MAIN-SERVICE.
+
+
