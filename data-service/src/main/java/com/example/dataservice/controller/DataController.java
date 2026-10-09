@@ -8,6 +8,7 @@ public class DataController {
 
     @GetMapping("/message")
     public String message() {
+        System.out.println("reached inside message() method inside data-service controller class");
         return "Hello from Data Service!";
     }
 }

@@ -13,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 public class MainApplication {
 
     public static void main(String[] args) {
+        System.out.println("reached inside main method of main-service. about to start the spring application context");
         SpringApplication.run(MainApplication.class, args);
     }
 
